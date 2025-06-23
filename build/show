@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>description</title>
+		<link rel="icon" href="https://tse4-mm.cn.bing.net/th/id/OIP-C.1K2v-NLCJJArBDXoMLUwyQAAAA?w=162&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" type="image/x-icon">
+		<link href="/static/css/theme.css" rel="stylesheet"/>
+		<link href="/static/css/loading.css" rel="stylesheet"/>
+
+		<script src="/static/js/jquery-3.5.1.min.js"></script>
+		<script src="/static/js/loading.js"></script>
+		<script src="/static/js/scrollmagic.js"></script>
+	</head>
+	<body style="height: 300vh;">
+		<!--loading-->
+		<div id="loader-wrapper">
+			<div id="loader">
+				<div class="loader-img">
+					<img src="https://img.zcool.cn/community/010a0359264b96a801216a3ed1224b.gif" >
+				</div>
+			</div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+
+		<div class="myScrollspy">
+			<div class="left-bar">
+				<div class="left-bar-right">
+					<div class="left-bar-right-item">
+						<a href="#section1" class="sidebar-link" data-section="section1">一、概述</a>
+					</div>
+					<div class="left-bar-right-item">
+						<a href="#section2" class="sidebar-link" data-section="section2">二、诊断结果</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection1" class="sidebar-link-two" data-section="childSection11">（一）病因</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection3" class="sidebar-link-two" data-section="childSection12">（二）解决方案</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection4" class="sidebar-link-two" data-section="childSection13">（三）就医建议</a>
+					</div>
+					<div class="left-bar-right-item">
+						<a href="#section3" class="sidebar-link" data-section="section3">三、饮食分析</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection2" class="sidebar-link-two" data-section="childSection21">（一）饮食平衡分析</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection4" class="sidebar-link-two" data-section="childSection22">（二）饮食建议</a>
+					</div>
+					<div class="left-bar-right-item">
+						<a href="#section4" class="sidebar-link" data-section="section4">四、总结</a>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-point" id="spointer"></div>
+		</div>
+
+		<div class="myPage">
+				<div class="myPage-main">
+					<div class="page-background">
+						<img src="/static/img/hourglass.png" style="transform: translateX(15vw);width: 60vw;z-index: -2;"/>
+						<img src="/static/img/description.png" style="transform: translate(15vw,-50vh) rotate(30deg);height: 27vh;60vw"/>
+					</div>
+
+					<div class="myPage-main-content">
+						<!-- 一、概述 -->
+						<div class="myPage-paragraph" id="section1">
+							<h2 class="myPage-paragraph-headline-h2">一、概述</h2>
+
+							<!-- 患者信息 -->
+							<p class="myPage-paragraph-content">
+								患者目前出现发烧感冒的症状，去年有新冠病毒感染并已康复的病史。患者的饮食习惯中包括经常食用麻辣烫，长期饮食习惯为正常饮食，没有额外的特殊饮食习惯。患者每天睡眠时间约7小时，生活压力较大，但保持每2到3天跑步两公里的运动习惯。
+							</p>
+
+							<!-- 可能患的疾病 -->
+							<p class="myPage-paragraph-content">
+								<strong>可能的疾病：</strong>冠状病毒感染 流行性感冒 禽流感
+							</p>
+							<br>
+
+							<!-- 推荐饮食 -->
+							<p class="myPage-paragraph-content">
+								<strong>饮食推荐：</strong>建议患者食用鸡蛋、芝麻、南瓜子仁、栗子（熟）、姜糖饮、苹果粥、苹果、苹果汁、草莓果汁、荞麦粥、荞麦面条、赤小豆粥等食物，避免食用猪油（板油）、猪小排（猪肋排）、猪里脊肉、猪大肠、白扁豆等食物。
+							</p>
+							<br>
+							<p class="myPage-paragraph-content">具体诊断结果如下：</p>
+						</div>
+
+						<!-- 二、诊断结果 -->
+						<div class="myPage-paragraph" id="section2">
+							<h2 class="myPage-paragraph-headline-h2">二、诊断结果</h2>
+							<p class="myPage-paragraph-content">
+								您的基本情况已呈交给网络医生和营养师，经过他们的商讨，已得出结果，医生方面给出的陈述如下：
+							</p>
+						</div>
+
+						<!-- （一）病因 -->
+						<div class="myPage-paragraph" id="childSection11">
+							<h3 class="myPage-paragraph-headline-h3"><b>（一）病因</b></h3>
+
+							<!-- 医生初步诊断结果 -->
+							<p class="myPage-paragraph-content">
+								<strong>初步诊断结果：</strong>普通感冒<br>
+								<strong>病因：</strong>普通感冒通常由多种病毒引起，如鼻病毒、冠状病毒、副流感病毒等，通过飞沫或接触传播。
+							</p>
+						</div>
+
+						<!-- （三）解决方案 -->
+						<div class="myPage-paragraph" id="childSection12">
+							<h3 class="myPage-paragraph-headline-h3"><b>（二）解决方案</b></h3>
+							<p class="myPage-paragraph-content">
+								<strong>应对方案：</strong>尊敬的患者，建议您采取以下治疗措施以缓解感冒症状：
+1. 保持充足的休息，避免过度劳累。
+2. 多饮水，保持良好的水分摄入。
+3. 可以使用对症药物，如维C银翘胶囊、利巴韦林颗粒等，以缓解症状。
+4. 注意保暖，避免受凉。
+5. 饮食上应以清淡易消化的食物为主，避免油腻和刺激性食物，推荐食用鸡蛋、芝麻、南瓜子仁、栗子（熟）、姜糖饮、苹果粥、荞麦粥、赤小豆粥等。
+6. 如果咽痛较为明显，可以使用喉痛灵片或含服消炎利咽的药物。
+7. 若出现鼻塞、流涕等症状，可以使用鼻炎喷雾剂或抗组胺药物。
+8. 如果有发热，可以使用对乙酰氨基酚缓释片来降温。
+9. 保持良好的作息习惯，确保有足够的休息，这对您的康复也是非常重要的。希望您能够遵循这些建议，早日恢复健康。<br>
+							</p>
+						</div>
+
+						<!-- （四）就医建议 -->
+						<div class="myPage-paragraph" id="childSection13">
+							<h3 class="myPage-paragraph-headline-h3"><b>（三）就医建议</b></h3>
+							<p class="myPage-paragraph-content">
+								<strong>就医建议：</strong>鉴于患者有规律的作息和足够的睡眠，以及目前的症状，建议患者暂时在家中观察治疗。如果症状在3天内没有明显改善，或者出现呼吸困难、持续高热等严重症状，应立即去医院就诊。此外，如果患者担心可能是新冠病毒感染，可以考虑进行核酸检测以排除疑虑。在感冒期间，患者应避免外出，减少与他人的接触，以防止病毒传播。请继续保持良好的作息习惯和充足的睡眠，这对您的康复非常重要。希望您能够遵循这些建议，早日恢复健康。<br>
+							</p>
+						</div>
+
+						<!-- 三、饮食分析-->
+						<div class="myPage-paragraph" id="section3">
+							<h2 class="myPage-paragraph-headline-h2">三、饮食分析</h2>
+							<p class="myPage-paragraph-content">
+								您的基本情况已呈交给网络医生和营养师，经过他们的商讨，已得出结果，营养师方面给出的陈述如下：
+							</p>
+						</div>
+						<!-- （一）饮食平衡分析 -->
+						<div class="myPage-paragraph" id="childSection21">
+							<h3 class="myPage-paragraph-headline-h3"><b>（一）饮食平衡分析</b></h3>
+							<p class="myPage-paragraph-content">
+								<strong>应当食用：</strong>鸡蛋 芝麻 南瓜子仁 栗子（熟） 姜糖饮 苹果粥 苹果 苹果汁 草莓果汁 荞麦粥 荞麦面条 赤小豆粥<br>
+								<strong>不应实用：</strong>猪油（板油） 猪小排（猪肋排） 猪里脊肉 猪大肠 白扁豆 麻辣烫
+							</p>
+						</div>
+
+						<!-- （三）饮食建议 -->
+						<div class="myPage-paragraph" id="childSection22">
+							<h3 class="myPage-paragraph-headline-h3"><b>（二）饮食建议</b></h3>
+							<p class="myPage-paragraph-content">
+								根据您的情况，建议您在感冒期间避免食用辛辣刺激性食物，如麻辣烫，以减轻咽喉不适。建议您增加富含维生素C和维生素A的食物，如苹果和草莓果汁，以增强免疫力。同时，鸡蛋、芝麻和南瓜子仁等富含优质蛋白和健康脂肪的食物有助于修复组织和提供能量。荞麦粥和荞麦面条是优质的碳水化合物来源，有助于提供持续的能量。赤小豆粥对于增强身体恢复也有好处。请尽量避免高脂肪和高胆固醇的食物，如猪油和猪大肠，这些食物可能会加重身体负担。保持充足的水分摄入，适当休息，如果感冒症状加重，请及时就医。
+							</p>
+						</div>
+
+						<!-- 四、总结 -->
+						<div class="myPage-paragraph" id="section4">
+							<h2 class="myPage-paragraph-headline-h2">四、总结</h2>
+							<!-- 患者信息 -->
+							<p class="myPage-paragraph-content">
+								尊敬的患者，
+
+经过医疗团队的综合评估，我们为您提供以下总结报告：
+
+您目前的发热和感冒症状主要是由普通病毒感染引起，可能包括鼻病毒、冠状病毒或副流感病毒等。虽然您去年有新冠病毒感染的病史，但根据当前症状，新冠病毒再次感染的可能性较低。不过，我们建议保持警惕，并在症状未改善或出现严重情况时及时就医，并考虑进行核酸检测以排除疑虑。
+
+您的饮食习惯中包含经常食用麻辣烫，这种刺激性食物可能会加重咽喉不适，不利于感冒的恢复。因此，建议您在感冒期间避免食用辛辣、油腻的食物，如猪油、猪肉类、白扁豆、咸鱼、油条以及麻辣烫等。相反，建议您选择温和、易于消化的食物，如鸡蛋、芝麻、南瓜子仁、栗子（熟）、姜糖饮、苹果粥、荞麦粥、赤小豆粥等，这些食物富含营养，有助于提高免疫力并缓解感冒症状。
+
+治疗方面，建议您保持充足的休息，多饮水，使用对症药物如维C银翘胶囊、利巴韦林颗粒等缓解症状，注意保暖，避免受凉。如果咽痛明显，可以使用喉痛灵片或含服消炎利咽的药物。对于鼻塞、流涕等症状，可以使用鼻炎喷雾剂或抗组胺药物。发热时，可使用对乙酰氨基酚缓释片来降温。同时，保持良好的作息习惯和充足的睡眠对您的康复至关重要。
+
+请您遵循以上建议，并在症状没有改善或出现呼吸困难、持续高热等严重症状时，立即去医院就诊。在感冒期间，请尽量避免外出，减少与他人的接触，以防止病毒传播。
+
+我们真诚地希望您能够遵循这些建议，早日恢复健康。
+
+祝您康复顺利！
+
+医疗团队协调者
+Summarizer
+							</p>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="btns">
+			<a href="/">Fill it out again</a>
+		</div>
+	</body>
+</html>
+<style>
+	.pointactive1{
+		top: 0.7vh;
+	}
+
+	.pointactive2{
+		top: 10vh;
+	}
+
+	.pointactive3{
+		top: 27vh;
+	}
+	.pointactive4{
+		top: 43vh;
+	}
+
+	.btns{
+  		margin: 25px 40vw;
+	  	display: inline-flex;
+	}
+	.btns a{
+	  display: inline-block;
+	  margin: 0 10px;
+	  text-decoration: none;
+	  border: 2px solid #69a6ce;
+	  color: #69a6ce;
+	  font-weight: 500;
+	  padding: 10px 25px;
+	  border-radius: 25px;
+	  text-transform: uppercase;
+	  transition: all 0.3s ease;
+	}
+	.btns a:hover{
+	  background: #69a6ce;
+	  color: #fff;
+	}
+</style>
+
+<script>
+	//侧边栏点击跳转开始
+	// 获取所有侧边栏链接
+	const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+	// 为每个侧边栏链接添加点击事件监听器
+	sidebarLinks.forEach((link) => {
+		link.addEventListener('click', (event) => {
+			event.preventDefault(); // 阻止默认的链接行为
+
+			// 从链接的 href 属性中获取目标内容区块的 ID
+			const targetSectionId = link.getAttribute('href').substring(1);
+
+			// 滚动到目标内容区块的上方 120px 处
+			const targetSection = document.getElementById(targetSectionId);
+			const targetOffset = targetSection.offsetTop - 30;
+			window.scrollTo({
+				top: targetOffset,
+				left: 0,
+				behavior: 'smooth'
+			});
+
+			// 给点击的链接添加 'current' 类
+			sidebarLinks.forEach((sidebarLink) => {
+				sidebarLink.classList.remove('current');
+			});
+			link.classList.add('current');
+		});
+	});
+
+	window.onload = function () {
+		const sidebarLinktwos = document.querySelectorAll('.sidebar-link-two');
+		console.log(sidebarLinktwos);
+
+		for (let i = 0; i < sidebarLinktwos.length; i++) {
+			const li = sidebarLinktwos[i];
+
+			li.onclick = function (event) {
+				event.preventDefault();
+				const twoId = li.getAttribute('data-section');
+				const twoSection = document.getElementById(twoId);
+				const twoOffset = twoSection.getBoundingClientRect().top - 110;
+
+				if (twoOffset >= 1 && twoOffset <= window.innerHeight) {
+					// 在视口内部，不需要滚动
+				} else {
+					// 在视口之外，按照原来的方式滚动到目标位置
+					window.scrollTo({top: twoOffset + window.pageYOffset, left: 0, behavior: 'smooth'});
+				}
+			};
+		}
+	};
+	//侧边栏点击跳转结束
+
+	//侧边栏随航开始
+	//获取所有侧边栏链接元素
+	var links = document.querySelectorAll('.sidebar-link');
+
+	// 添加滚动事件监听器
+	window.addEventListener('scroll', function() {
+		// 获取当前滚动位置
+		var scrollPosition = window.scrollY;
+
+		// 遍历所有目标区域
+		for (var i = 1; i <= 10; i++) {
+			// 获取目标区域的位置和高度
+			var section = document.getElementById('section' + i);
+			if (section == null) continue;
+			var sectionTop = section.offsetTop - 90; // 上移
+			var sectionHeight = section.offsetHeight;
+
+			// 如果当前滚动位置处于目标区域内，则将相应的侧边栏链接样式修改为当前样式
+			if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+				links.forEach(function(link) {
+					link.classList.remove('current');
+				});
+				links[i - 1].classList.add('current');
+			}
+		}
+	});
+
+	document.addEventListener('DOMContentLoaded', function() {
+		// 获取当前滚动位置
+		var scrollPosition = window.scrollY;
+
+		// 遍历所有目标区域
+		for (let i = 1; i <= 10; i++) {
+			// 获取目标区域的位置和高度
+			var section = document.getElementById('section' + i);
+			if (section == null) continue;
+			var sectionTop = section.offsetTop - 90; // 上移
+			var sectionHeight = section.offsetHeight;
+
+			// 如果当前滚动位置处于目标区域内，则将相应的侧边栏链接样式修改为当前样式
+			if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+				links.forEach(function(link) {
+					link.classList.remove('current');
+				});
+				links[i - 1].classList.add('current');
+			}
+		}
+	});
+	//侧边栏随航结束
+
+	//侧边栏滚动条
+	// 获取元素
+	// init controller
+	  var controller = new ScrollMagic.Controller({globalSceneOptions: {}});
+	  // build scenes
+		new ScrollMagic.Scene({triggerElement: "#section1"})
+				.setClassToggle("#spointer", "pointactive1") // add class toggle
+				.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#section2"})
+				.setClassToggle("#spointer", "pointactive2") // add class toggle
+				.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#section3"})
+				.setClassToggle("#spointer", "pointactive3") // add class toggle
+				.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#section4"})
+				.setClassToggle("#spointer", "pointactive4") // add class toggle
+				.addTo(controller);
+</script>

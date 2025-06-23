@@ -1,0 +1,25 @@
+# DO NOT MODIFY THIS FILE, create a new key.yaml, define OPENAI_API_KEY.
+# The configuration of key.yaml has a higher priority and will not enter git
+
+#### if OpenAI
+## The official OPENAI_API_BASE is https://api.openai.com/v1
+## If the official OPENAI_API_BASE is not available, we recommend using the [openai-forward](https://github.com/beidongjiedeguang/openai-forward).
+## Or, you can configure OPENAI_PROXY to access official OPENAI_API_BASE.
+OPENAI_API_BASE: "https://api.fe8.cn/v1"
+#OPENAI_PROXY: "http://127.0.0.1:8118"
+OPENAI_API_KEY: "sk-ZfUmS7sLXM3NFT1OW7hClcwUj9xUwe3kS9s5gq2FEcIuOtAB"
+OPENAI_API_MODEL: "gpt-4-turbo-preview"
+MAX_TOKENS: 1500
+RPM: 10
+
+#### if QIANFAN
+QIANFAN_ACCESS_KEY: "ACCESS_KEY"
+QIANFAN_API_KEY: "API_KEY"
+QIANFAN_SECRET_KEY: "SECRET_KEY"
+QIANFAN_MODEL: "ERNIE-Bot-8k"
+QIANFAN_ENDPOINT: False
+QIANFAN_CALC_USAGE: True
+QIANFAN_TEMPERATURE: 0.0
+
+
+PROMPT_FORMAT: json #json or markdown

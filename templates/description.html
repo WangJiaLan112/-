@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>description</title>
+		<link rel="icon" href="https://tse4-mm.cn.bing.net/th/id/OIP-C.1K2v-NLCJJArBDXoMLUwyQAAAA?w=162&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" type="image/x-icon">
+		<link href="{{url_for('static',filename='css/theme.css')}}" rel="stylesheet"/>
+		<link href="{{url_for('static',filename='css/loading.css')}}" rel="stylesheet"/>
+
+		<script src="{{url_for('static',filename='js/jquery-3.5.1.min.js')}}"></script>
+		<script src="{{url_for('static',filename='js/loading.js')}}"></script>
+		<script src="{{url_for('static',filename='js/scrollmagic.js')}}"></script>
+	</head>
+	<body style="height: 300vh;">
+		<!--loading-->
+		<div id="loader-wrapper">
+			<div id="loader">
+				<div class="loader-img">
+					<img src="https://img.zcool.cn/community/010a0359264b96a801216a3ed1224b.gif" >
+				</div>
+			</div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+
+		<div class="myScrollspy">
+			<div class="left-bar">
+				<div class="left-bar-right">
+					<div class="left-bar-right-item">
+						<a href="#section1" class="sidebar-link" data-section="section1">一、概述</a>
+					</div>
+					<div class="left-bar-right-item">
+						<a href="#section2" class="sidebar-link" data-section="section2">二、诊断结果</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection1" class="sidebar-link-two" data-section="childSection11">（一）病因</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection3" class="sidebar-link-two" data-section="childSection12">（二）解决方案</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection4" class="sidebar-link-two" data-section="childSection13">（三）就医建议</a>
+					</div>
+					<div class="left-bar-right-item">
+						<a href="#section3" class="sidebar-link" data-section="section3">三、饮食分析</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection2" class="sidebar-link-two" data-section="childSection21">（一）饮食平衡分析</a>
+					</div>
+					<div class="left-bar-right-item-two small-item">
+						<a href="#childSection4" class="sidebar-link-two" data-section="childSection22">（二）饮食建议</a>
+					</div>
+					<div class="left-bar-right-item">
+						<a href="#section4" class="sidebar-link" data-section="section4">四、总结</a>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-point" id="spointer"></div>
+		</div>
+
+		<div class="myPage">
+				<div class="myPage-main">
+					<div class="page-background">
+						<img src="{{url_for('static',filename='img/hourglass.png')}}" style="transform: translateX(15vw);width: 60vw;z-index: -2;"/>
+						<img src="{{url_for('static',filename='img/description.png')}}" style="transform: translate(15vw,-50vh) rotate(30deg);height: 27vh;60vw"/>
+					</div>
+
+					<div class="myPage-main-content">
+						<!-- 一、概述 -->
+						<div class="myPage-paragraph" id="section1">
+							<h2 class="myPage-paragraph-headline-h2">一、概述</h2>
+
+							<!-- 患者信息 -->
+							<p class="myPage-paragraph-content">
+								{{ patient_info }}
+							</p>
+
+							<!-- 可能患的疾病 -->
+							<p class="myPage-paragraph-content">
+								<strong>可能的疾病：</strong>{{ disease_list }}
+							</p>
+							<br>
+
+							<!-- 推荐饮食 -->
+							<p class="myPage-paragraph-content">
+								<strong>饮食推荐：</strong>{{ eat_recommend }}
+							</p>
+							<br>
+							<p class="myPage-paragraph-content">具体诊断结果如下：</p>
+						</div>
+
+						<!-- 二、诊断结果 -->
+						<div class="myPage-paragraph" id="section2">
+							<h2 class="myPage-paragraph-headline-h2">二、诊断结果</h2>
+							<p class="myPage-paragraph-content">
+								您的基本情况已呈交给网络医生和营养师，经过他们的商讨，已得出结果，医生方面给出的陈述如下：
+							</p>
+						</div>
+
+						<!-- （一）病因 -->
+						<div class="myPage-paragraph" id="childSection11">
+							<h3 class="myPage-paragraph-headline-h3"><b>（一）病因</b></h3>
+
+							<!-- 医生初步诊断结果 -->
+							<p class="myPage-paragraph-content">
+								<strong>初步诊断结果：</strong>{{ doctor_disease }}<br>
+								<strong>病因：</strong>{{ cause }}
+							</p>
+						</div>
+
+						<!-- （三）解决方案 -->
+						<div class="myPage-paragraph" id="childSection12">
+							<h3 class="myPage-paragraph-headline-h3"><b>（二）解决方案</b></h3>
+							<p class="myPage-paragraph-content">
+								<strong>应对方案：</strong>{{ doctor_solution }}<br>
+							</p>
+						</div>
+
+						<!-- （四）就医建议 -->
+						<div class="myPage-paragraph" id="childSection13">
+							<h3 class="myPage-paragraph-headline-h3"><b>（三）就医建议</b></h3>
+							<p class="myPage-paragraph-content">
+								<strong>就医建议：</strong>{{ doctor_suggestion }}<br>
+							</p>
+						</div>
+
+						<!-- 三、饮食分析-->
+						<div class="myPage-paragraph" id="section3">
+							<h2 class="myPage-paragraph-headline-h2">三、饮食分析</h2>
+							<p class="myPage-paragraph-content">
+								您的基本情况已呈交给网络医生和营养师，经过他们的商讨，已得出结果，营养师方面给出的陈述如下：
+							</p>
+						</div>
+						<!-- （一）饮食平衡分析 -->
+						<div class="myPage-paragraph" id="childSection21">
+							<h3 class="myPage-paragraph-headline-h3"><b>（一）饮食平衡分析</b></h3>
+							<p class="myPage-paragraph-content">
+								<strong>应当食用：</strong>{{ nutritionist_do_eat }}<br>
+								<strong>不应实用：</strong>{{ nutritionist_not_eat }}
+							</p>
+						</div>
+
+						<!-- （三）饮食建议 -->
+						<div class="myPage-paragraph" id="childSection22">
+							<h3 class="myPage-paragraph-headline-h3"><b>（二）饮食建议</b></h3>
+							<p class="myPage-paragraph-content">
+								{{ nutritionist_solution }}
+							</p>
+						</div>
+
+						<!-- 四、总结 -->
+						<div class="myPage-paragraph" id="section4">
+							<h2 class="myPage-paragraph-headline-h2">四、总结</h2>
+							<!-- 患者信息 -->
+							<p class="myPage-paragraph-content">
+								{{ summary }}
+							</p>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="btns">
+			<a href="{{ url_for('index') }}">Fill it out again</a>
+		</div>
+	</body>
+</html>
+<style>
+	.pointactive1{
+		top: 0.7vh;
+	}
+
+	.pointactive2{
+		top: 10vh;
+	}
+
+	.pointactive3{
+		top: 27vh;
+	}
+	.pointactive4{
+		top: 43vh;
+	}
+
+	.btns{
+  		margin: 25px 40vw;
+	  	display: inline-flex;
+	}
+	.btns a{
+	  display: inline-block;
+	  margin: 0 10px;
+	  text-decoration: none;
+	  border: 2px solid #69a6ce;
+	  color: #69a6ce;
+	  font-weight: 500;
+	  padding: 10px 25px;
+	  border-radius: 25px;
+	  text-transform: uppercase;
+	  transition: all 0.3s ease;
+	}
+	.btns a:hover{
+	  background: #69a6ce;
+	  color: #fff;
+	}
+</style>
+
+<script>
+	//侧边栏点击跳转开始
+	// 获取所有侧边栏链接
+	const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+	// 为每个侧边栏链接添加点击事件监听器
+	sidebarLinks.forEach((link) => {
+		link.addEventListener('click', (event) => {
+			event.preventDefault(); // 阻止默认的链接行为
+
+			// 从链接的 href 属性中获取目标内容区块的 ID
+			const targetSectionId = link.getAttribute('href').substring(1);
+
+			// 滚动到目标内容区块的上方 120px 处
+			const targetSection = document.getElementById(targetSectionId);
+			const targetOffset = targetSection.offsetTop - 30;
+			window.scrollTo({
+				top: targetOffset,
+				left: 0,
+				behavior: 'smooth'
+			});
+
+			// 给点击的链接添加 'current' 类
+			sidebarLinks.forEach((sidebarLink) => {
+				sidebarLink.classList.remove('current');
+			});
+			link.classList.add('current');
+		});
+	});
+
+	window.onload = function () {
+		const sidebarLinktwos = document.querySelectorAll('.sidebar-link-two');
+		console.log(sidebarLinktwos);
+
+		for (let i = 0; i < sidebarLinktwos.length; i++) {
+			const li = sidebarLinktwos[i];
+
+			li.onclick = function (event) {
+				event.preventDefault();
+				const twoId = li.getAttribute('data-section');
+				const twoSection = document.getElementById(twoId);
+				const twoOffset = twoSection.getBoundingClientRect().top - 110;
+
+				if (twoOffset >= 1 && twoOffset <= window.innerHeight) {
+					// 在视口内部，不需要滚动
+				} else {
+					// 在视口之外，按照原来的方式滚动到目标位置
+					window.scrollTo({top: twoOffset + window.pageYOffset, left: 0, behavior: 'smooth'});
+				}
+			};
+		}
+	};
+	//侧边栏点击跳转结束
+
+	//侧边栏随航开始
+	//获取所有侧边栏链接元素
+	var links = document.querySelectorAll('.sidebar-link');
+
+	// 添加滚动事件监听器
+	window.addEventListener('scroll', function() {
+		// 获取当前滚动位置
+		var scrollPosition = window.scrollY;
+
+		// 遍历所有目标区域
+		for (var i = 1; i <= 10; i++) {
+			// 获取目标区域的位置和高度
+			var section = document.getElementById('section' + i);
+			if (section == null) continue;
+			var sectionTop = section.offsetTop - 90; // 上移
+			var sectionHeight = section.offsetHeight;
+
+			// 如果当前滚动位置处于目标区域内，则将相应的侧边栏链接样式修改为当前样式
+			if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+				links.forEach(function(link) {
+					link.classList.remove('current');
+				});
+				links[i - 1].classList.add('current');
+			}
+		}
+	});
+
+	document.addEventListener('DOMContentLoaded', function() {
+		// 获取当前滚动位置
+		var scrollPosition = window.scrollY;
+
+		// 遍历所有目标区域
+		for (let i = 1; i <= 10; i++) {
+			// 获取目标区域的位置和高度
+			var section = document.getElementById('section' + i);
+			if (section == null) continue;
+			var sectionTop = section.offsetTop - 90; // 上移
+			var sectionHeight = section.offsetHeight;
+
+			// 如果当前滚动位置处于目标区域内，则将相应的侧边栏链接样式修改为当前样式
+			if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+				links.forEach(function(link) {
+					link.classList.remove('current');
+				});
+				links[i - 1].classList.add('current');
+			}
+		}
+	});
+	//侧边栏随航结束
+
+	//侧边栏滚动条
+	// 获取元素
+	// init controller
+	  var controller = new ScrollMagic.Controller({globalSceneOptions: {}});
+	  // build scenes
+		new ScrollMagic.Scene({triggerElement: "#section1"})
+				.setClassToggle("#spointer", "pointactive1") // add class toggle
+				.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#section2"})
+				.setClassToggle("#spointer", "pointactive2") // add class toggle
+				.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#section3"})
+				.setClassToggle("#spointer", "pointactive3") // add class toggle
+				.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#section4"})
+				.setClassToggle("#spointer", "pointactive4") // add class toggle
+				.addTo(controller);
+</script>

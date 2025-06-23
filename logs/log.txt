@@ -1,0 +1,13 @@
+2025-06-23 09:43:07.165 | INFO     | metagpt.config:__init__:43 - Config loading done.
+2025-06-23 09:43:12.165 | INFO     | metagpt.config:__init__:43 - Config loading done.
+2025-06-23 09:45:41.599 | INFO     | metagpt.team:invest:39 - Investment: $3.0.
+2025-06-23 09:45:41.600 | DEBUG    | metagpt.roles.role:_observe:240 - Preliminary Evaluator(医学专业人士，具备丰富的医疗知识和临床经验，能够对患者的初步信息进行全面评估。) observed: ['Human: {\n    "symptoms": "感...']
+2025-06-23 09:45:41.600 | DEBUG    | metagpt.roles.role:_set_state:167 - [Assess]
+2025-06-23 09:45:41.600 | DEBUG    | metagpt.roles.role:_react:263 - Preliminary Evaluator(医学专业人士，具备丰富的医疗知识和临床经验，能够对患者的初步信息进行全面评估。): self._rc.state=0, will do Assess
+2025-06-23 09:45:41.601 | INFO     | metagpt.roles.role:_act:212 - Preliminary Evaluator(医学专业人士，具备丰富的医疗知识和临床经验，能够对患者的初步信息进行全面评估。): ready to Assess
+2025-06-23 09:45:41.602 | DEBUG    | metagpt.roles.role:run:321 - Doctor(具备深厚的医学理论知识和实践经验，能够对患者的症状进行深入分析，提出准确的诊断和治疗方案。): no news. waiting.
+2025-06-23 09:45:41.602 | DEBUG    | metagpt.roles.role:run:321 - Nutritionist(营养学专家，具备专业的营养学知识和实践经验，能够对患者的饮食习惯进行深入分析。): no news. waiting.
+2025-06-23 09:45:41.603 | DEBUG    | metagpt.roles.role:run:321 - Summarizer(医疗团队中的协调者，具备全面的医疗知识，能够将各方分析结果进行汇总。): no news. waiting.
+2025-06-23 09:45:47.967 | INFO     | metagpt.config:__init__:43 - Config loading done.
+2025-06-23 09:50:15.801 | INFO     | metagpt.config:__init__:43 - Config loading done.
+2025-06-23 09:50:20.519 | INFO     | metagpt.config:__init__:43 - Config loading done.

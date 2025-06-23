@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 error</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/404.css')}}">
+</head>
+<body>
+    <div id="error-page">
+        <div class="content">
+            <h1 data-text="Sorry">Sorry</h1>
+            <h4 data-text="Opps! Page not found">Opps! Incomplete information</h4>
+            <p>Sorry, the information you filled in is incomplete. If you want to fill in the information again, please click on the button below.</p>
+            <div class="btns">
+                <a href="{{ url_for('index') }}">Fill it out again</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

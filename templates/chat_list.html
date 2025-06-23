@@ -1,0 +1,20 @@
+<div class="chat-list">
+  <!-- 新的对话 -->
+  <div class="d-grid gap-2" style="margin: 10px;">
+    <button class="btn btn-outline-primary" type="button" onclick="newChat()">
+      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+        stroke-linejoin="round" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+      &nbsp New Chat
+    </button>
+  </div>
+  <!-- 消息列表 -->
+  <div class="message-list px-1 " id="messagelist"
+    style="height: calc(100vh - 169px); overflow-y: scroll; -ms-overflow-style: none; scrollbar-width: none;">
+    <div class="list-group" id="chat-list-history">
+      <!-- 最近对话 -->
+    </div>
+  </div>
+</div>
